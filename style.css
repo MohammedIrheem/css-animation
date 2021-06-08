@@ -5,3 +5,92 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  display: flex;
+}
+
+.wrapper .dynamic-txts {
+  display: inline;
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  font-size: 60px;
+  font-weight: 800;
+  list-style: none;
+  position: relative;
+  top: 0;
+  animation: slide 9s steps(3) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  font-weight: 500;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.container .dynamic-txts .item1 {
+  background: -webkit-linear-gradient(#ff4c60, #5d72e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .dynamic-txts .item2 {
+  background: -webkit-linear-gradient(#63b658, #cdd90f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .second-txt {
+  overflow: hidden;
+  position: relative;
+  width: 18em;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin-left: 40px;
+  animation: typing2 3s ease-in-out 6s 1 normal both;
+}
+@keyframes typing2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

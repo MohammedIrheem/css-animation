@@ -65,12 +65,12 @@ body {
 }
 
 .container .dynamic-txts .item1 {
-  background: -webkit-linear-gradient(to right, #ff4c60, #5d72e6);
+  background: -webkit-linear-gradient(#ff4c60, #5d72e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .container .dynamic-txts .item2 {
-  background: -webkit-linear-gradient(to right, #63b658, #cdd90f);
+  background: -webkit-linear-gradient(#63b658, #cdd90f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

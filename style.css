@@ -52,7 +52,7 @@ body {
   height: 100%;
   width: 100%;
   background: #ffffff;
-  animation: typing 3s steps(10) infinite;
+  animation: typing 3s steps(50) infinite;
 }
 @keyframes typing {
   40%,
